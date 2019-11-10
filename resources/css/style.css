@@ -1,0 +1,740 @@
+
+
+/* BLOCKS -------------------------------------  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga", "dlig", "clig", "kern";
+    -webkit-font-feature-settings: "liga", "dlig", "clig", "kern";
+    -moz-font-feature-settings: "liga", "dlig", "clig", "kern";
+    -o-font-feature-settings: "liga", "dlig", "clig", "kern";
+}
+
+body {
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: orator-std, monospace;
+    font-size: 20px;
+    line-height: 1.4em;
+    padding: 0.5em;
+}
+
+iframe {
+    outline: 1px solid #333;
+}
+iframe#ether {
+    height: 700px !important;
+    max-width: 40em;
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 1em;
+    line-height: 1em;
+    position: relative;
+    z-index: 20;
+    line-height: 2em;
+    font-weight: normal;
+    font-family: orator-std, monospace;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-family: orator-std, monospace;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: orator-std, monospace;
+    margin: 0;
+    text-align: center;
+}
+h3 {
+    text-transform: uppercase;
+    margin: 1em 0;
+    font-size: 20px;
+}
+h4 {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 60%;
+    display: block;
+}
+img:first-of-type {
+    margin-top: 0;
+}
+
+img.inline {
+    display: inline;
+    vertical-align: top;
+    margin: 0;
+    height: 1em;
+}
+
+.thumbnail {
+    max-width: 30%;
+}
+
+.bigpicture {
+    max-width: 95%;
+}
+
+blockquote {
+    font-family: orator-std, monospace;
+    font-size: 18px;
+    margin: 20px 60px;
+}
+p {
+    margin-bottom: 0;
+}
+
+p + p {
+    text-indent: 3em;
+}
+hr {
+    border: 0;
+    height: 20px;
+    margin: 0;
+}
+hr + hr {
+    display: block;
+    border-bottom: 0px solid black;
+}
+/* The <pre> tag defines preformatted text.
+ * Text in a <pre> element is displayed in a fixed-width font (usually Courier),
+ * and it preserves both spaces and line breaks.
+*/
+code, pre {
+    font-family: orator-std, monospace;
+}
+
+figcaption {
+    font-family: orator-std, monospace;
+    font-size: 0.7em;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+figure iframe {
+    max-width: 70%;
+    margin: 1em auto;
+    display: block;
+}
+
+.footnote {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin-bottom: 2em;
+}
+.footnote p {
+    margin-bottom: 0;
+}
+
+.month {
+    color: #DA70D6;
+}
+
+.time {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin-bottom:;
+}
+
+/* INLINES ------------------------------------- */
+
+a {
+    text-decoration: none;
+    color: #DA70D6;
+}
+
+a:hover {
+    text-decoration: underline;
+        color: #DA70D6;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #DA70D6;
+}
+
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+sup {
+    font-size: 0.65em;
+    line-height: 0;
+    vertical-align: 0.5em;
+}
+sup a {
+    font-family: orator-std, monospace;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+dt:after {
+    content: ": ";
+}
+
+#content dd {
+        margin-left: 1.4em;
+    }
+#content dd:before {
+        content: "-” ";
+}
+
+
+.meta dt,
+.meta dd {
+        float: left;
+}
+.meta dt {
+        clear: both;
+        margin-right: 0.5em;
+}
+
+.comment {
+    width: 1em;
+    height: 1em;
+}
+
+
+/* FORMS -------------------------- */
+form {
+    margin-bottom: 0;
+}
+form label, form textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+form input, form textarea {
+  background: none;
+  border-style: solid;
+  border-color: #FFFFFF #FFFFFF #00FA9A #FFFFFF;
+  font-family: Nasa;
+    font-size: inherit;
+}
+
+div#content form {
+    margin-left: 2em;
+}
+div#content input {
+    vertical-align: middle;
+}
+
+/* GENERIC CLASSES -------------------------------- */
+
+.button {
+  text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.button:hover {
+    background: none;
+    outline: none;
+}
+
+.inline {
+    display: inline;
+}
+
+
+/* PAGE STRUCTURE --------------------------------- */
+
+.wrap {
+    margin: 1em 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.wrap:before, .wrap:after {
+    content: " ";
+    /* 1 */
+     display: table;
+    /* 2 */
+}
+.wrap:after {
+    clear: both;
+}
+
+.left-side, .middle, .right-side {
+    float: left;
+    position: relative;
+}
+.left-side,
+.right-side  {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.middle {
+    width: 40em;
+    padding: 10px 20px;
+}
+
+.write-mode .left-side,
+.write-mode .right-side {
+    width: 15%
+}
+
+.write-mode .middle {
+    width: 70%;
+}
+
+
+#content .middle {
+    width: 100%;
+}
+
+
+
+/* Navigation */
+nav {
+    font-family: orator-std, monospace;
+    line-height: 1.3em;
+    margin-bottom: 2em;
+    font-size: 0.7em;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    padding: 0.25em;
+    z-index: 1000;
+}
+nav#nav-left {
+    left: 0;
+    width: 100%;
+}
+nav#nav-right {
+    right: 0;
+    text-align: right;
+    margin-top: 4px;
+}
+nav div#staff-menu {
+    display: inline;
+    color: darkgray;
+}
+
+nav h1 {
+    display: inline;
+}
+nav span:before {
+    content: " â€” ";
+}
+
+nav div#sort-by {
+    display: inline;
+    color: darkgray;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav a.active {
+    color: black;
+}
+
+
+div#previous a,
+div#next a {
+    position: fixed;
+    top: 6.5em;
+    font-family: orator-std, monospace;
+    font-size: 0.7em;
+    line-height: 1.2em;
+    padding: 1em;
+    z-index: 6666;
+}
+div#previous a span,
+div#next a span {
+    display: none;
+}
+div#previous a:hover span,
+div#next a:hover span {
+    display: block;
+}
+div#next {
+    text-align: right;
+    padding-right: 0em;
+}
+div#next a {
+        right: 0;
+}
+
+/* MAIN CONTENT ---------------------------------- */
+header {
+    margin-top: 1em;
+    font-size: 2.6em;
+    line-height: 1.1em;
+    font-family: orator-std, monospace;
+}
+header h1 {
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 0;
+    text-align: center;
+    display: inline;
+    font-family: inherit;
+}
+header p, header h2 {
+    font-family: inherit;
+    margin-bottom: 0;
+    line-height: inherit;
+    text-align: center;
+    text-transform: none;
+    display: inline;
+}
+
+header p.authors:after {
+    content: " ";
+}
+header.book * {
+    font-family: orator-std, monospace;
+}
+
+#content {
+    font-weight: 200;
+/*    max-width: 90%;*/
+}
+
+#content ul li:before {
+    content: "–” ";
+    margin-left: 2em;
+}
+
+.footnote ol {
+    list-style-type: decimal-leading-zero;
+    margin-left: 2em;
+}
+
+.footnote ol li {
+    margin-bottom: 0em;
+}
+
+.intro {
+    font-family: orator-std, monospace;
+    font-size: 18px;
+    text-indent: 0em;
+}
+
+.right-side h2 {
+    margin-bottom: 1em;
+}
+
+dl.meta {
+    font-family: orator-std, monospace;
+    font-size: 0.7em;
+    line-height: 1.3em;
+    color: grey;
+}
+div#metadata p {
+   font-family: orator-std, monospace;
+    text-indent: 0;
+    margin-top: 2em;
+    clear: both;
+}
+
+div#go-up {
+    clear: both;
+    margin-top: 2em;
+}
+div#go-up a {
+    border-bottom: none;
+}
+div#go-up a:hover {
+    color: red;
+}
+
+
+
+a[lang=en],
+a[lang=en]:visited:hover  {
+    color: #1E90FF;
+}
+
+a[lang=fr],
+a[lang=fr]:visited:hover {
+      color: #A0522D;
+}
+a[lang=en]:visited,
+a[lang=fr]:visited,
+a[lang=en]:hover,
+a[lang=fr]:hover {
+    color: black;
+}
+
+a[lang=fr] + a[lang=en]:before {
+    content: ", ";
+    color: black;
+    margin-left: -0.2em;
+}
+
+li[data-type=Book] {
+   font-family: Nasa, sans-serif;
+}
+
+
+/* AUTHORSHIP ----------------------------- */
+
+.authors {
+    display: inline;
+}
+
+#content span {
+    background-color: inherit !important;
+}
+
+/* ------ PRINT/SCREEN ------ */
+@media screen {
+    .print-only {
+    display: none;
+    }
+}
+
+
+/* User Interface */
+
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999999;
+    background: rgba(0,0,0,0.6667);
+    text-align: center;
+}
+
+.popup-wrapper.hidden {
+    display: none;
+}
+
+.popup-wrapper:before {
+        position: relative;
+        height: 100%;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.popup {
+        display: inline-block;
+        vertical-align: middle;
+        background-color: white;
+        padding: 30px;
+}
+
+
+/* STYLES PAR PAD */
+
+/* Typo Windsor texte Camille */
+.windsor {
+    font-family: "Chalkboard";
+}
+
+/* Typo Nasa texte BR */
+.BR {
+    font-family: orator-std, monospace;
+}
+
+/* Texte centrÃ© Antin */
+.antin {
+    white-space: pre-wrap;
+    text-align: center;
+    font-family: orator-std, monospace;
+    font-size: ;
+    line-height: @line-height;
+    margin: @line-height 3 * @line-height;
+}
+
+/* Typo Bat intro toast Mark */
+.toastintro {
+    font-family: orator-std, monospace;
+    color: black;
+}
+
+/* Typo Nasa bold toast Mark FR */
+.toast {
+    font-family: orator-std, monospace;
+/*     text-decoration: underline; */
+    color: #1E90FF;
+}
+
+/* Typo Nasa didascalie toast Mark */
+.toastdida {
+    font-family: orator-std, monospace;
+/*     text-decoration: underline; */
+    color: #C8C8C8;
+}
+
+/* Ce CSS fait que le p du pad `pad-16_jerome_as_cheapmd` est affichÃ© diffÃ©rement que les autres pads */
+.pad-16_jerome_as_cheapmd p {
+}
+
+/* PAD DU SOMMAIRE */
+.pad-00md .left-side,
+.pad-00md .right-side {
+    width: 5%;
+    display: none;
+}
+.pad-00md .middle {
+    width: 100%;
+    padding: 60px 20px;
+}
+.pad-00md .middle ul {
+    padding-bottom: 100px;
+}
+
+/* PADS CACHES DANS L'INDEX */
+.pad-00md li[data-type=unlisted] {
+    display: none;
+}
+
+/*.pad-00md {
+    background-image: url("/media/images/eyes/planche-1.png");
+}*/
+.pad-00md .wrap:nth-of-type(1) {
+    height: 200px;
+}
+.pad-00md header h1 {
+    visibility: hidden;
+}
+
+/* Style de liste */
+.pad-00md ul {
+    font-size: 2.6em;
+    text-indent: -1.3em;
+    line-height: 1.1em;
+    margin-left: 1.3em;
+}
+
+/* Style de titre */
+.pad-00md div h1 {
+    font-size: 5em !important;
+    text-align: center;
+    color: black;
+    line-height: 0em;
+    outline: none;
+}
+
+.pad-00md #content ul li:before {
+    content: "";
+    margin-left: 0;
+}
+
+.pad-00md #content span.authors:after {
+    content: ", ";
+}
+
+/* Texte sans alinÃ©a */
+.pad-00md #content p {
+    text-indent: 0em;
+    display: inherit;
+}
+
+/*.pad-00md li a em {
+    font-style: normal;
+}*/
+
+/* Style des pages Publications et About */
+.book,
+.pad-00-batmd #content p {
+    font-family: orator-std, monospace;
+/*    font-size: 18px;*/
+    text-indent: 0em;
+}
+.pad-00md .wrap {
+    display: block;
+}
+
+.pad-28_spencer-holst_charabia-francais_frmd #content p,
+.pad-04_alexis-guillier_artless_frmd #content p,
+.pad-07_ryan-gander_lax_frmd #content p {
+    text-indent: 0em;
+}
+
+/* Espacement texte Antin */
+.pad-15_david_antin_parler_aux_frontieres_frmd #content p {
+    white-space: pre-wrap;
+    text-align: center;
+}
+.pad-21b_david-antin_silence-noisemd #content p {
+    white-space: pre-wrap;
+    text-indent: 0em;
+/*    text-transform: uppercase; */
+}
+
+
+.pad-stylecss #content {
+    white-space: pre-wrap;
+}
+
+/* RELEARN OSP */
+.pad-02_osp_relearn_frmd h2 {
+    clear: both;
+}
+
+.pad-02_osp_relearn_frmd blockquote {
+    width: 50%;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    float: left;
+    font-family: monospace;
+    font-size: 0.7em;
+    line-height: 1.2em;
+}
+.pad-02_osp_relearn_frmd blockquote:nth-of-type(2n) {
+        float: right;
+        padding-left: 1em;
+        padding-right: 0;
+}
+.pad-02_osp_relearn_frmd img {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/*.pad-33_benjamin-seror_a_propos_de_future_frmd {
+    background-image:  url("/media/images/eyes/Planches-yeux-3.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}*/
+
+.pad-61_mark_geffriaud_toast_frmd #content p {
+    font-family: Nasa, sans-serif;
+}
+
+.pad-61_mark_geffriaud_toast_enmd #content p {
+    font-family: Nasa, sans-serif;
+}
