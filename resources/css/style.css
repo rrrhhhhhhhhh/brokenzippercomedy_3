@@ -232,13 +232,7 @@ form label, form textarea {
     font-family: inherit;
     font-size: inherit;
 }
-form input, form textarea {
-  background: none;
-  border-style: solid;
-  border-color: #FFFFFF #FFFFFF #00FA9A #FFFFFF;
-  font-family: Nasa;
-    font-size: inherit;
-}
+
 
 div#content form {
     margin-left: 2em;
@@ -504,7 +498,7 @@ a[lang=fr] + a[lang=en]:before {
 }
 
 li[data-type=Book] {
-   font-family: Nasa, sans-serif;
+   font-family: orator-std, monospace;
 }
 
 
@@ -669,10 +663,4 @@ li[data-type=Book] {
     margin: 0;
 }
 
-.pad-61_mark_geffriaud_toast_frmd #content p {
-    font-family: Nasa, sans-serif;
-}
 
-.pad-61_mark_geffriaud_toast_enmd #content p {
-    font-family: Nasa, sans-serif;
-}
