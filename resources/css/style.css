@@ -66,6 +66,10 @@ h4 {
     text-decoration: underline;
 }
 
+.clubs {
+  font-size: 2em;
+}
+
 img {
     max-width: 60%;
     display: block;
@@ -248,6 +252,7 @@ div#content input {
 .button {
   text-decoration: none;
     margin: 0 0.5em;
+    font-size: 1.5em;
 }
 
 .button:hover {
@@ -324,7 +329,7 @@ nav {
     position: fixed;
     top: 0;
     background-color: white;
-    padding: 0.25em;
+    padding: 0.25em 0.25em 0.5em 0.25em;
     z-index: 1000;
 }
 nav#nav-left {
@@ -520,53 +525,10 @@ li[data-type=Book] {
     }
 }
 
-
-/* User Interface */
-
-.popup-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999999999999;
-    background: rgba(0,0,0,0.6667);
-    text-align: center;
-}
-
-.popup-wrapper.hidden {
-    display: none;
-}
-
-.popup-wrapper:before {
-        position: relative;
-        height: 100%;
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-.popup {
-        display: inline-block;
-        vertical-align: middle;
-        background-color: white;
-        padding: 30px;
-}
-
-
-/* STYLES PAR PAD */
-
-/* Typo Windsor texte Camille */
-.windsor {
-    font-family: "Chalkboard";
-}
-
-/* Typo Nasa texte BR */
 .BR {
     font-family: orator-std, monospace;
 }
 
-/* Texte centrÃ© Antin */
 .antin {
     white-space: pre-wrap;
     text-align: center;
@@ -576,31 +538,29 @@ li[data-type=Book] {
     margin: @line-height 3 * @line-height;
 }
 
-/* Typo Bat intro toast Mark */
+
 .toastintro {
     font-family: orator-std, monospace;
     color: black;
 }
 
-/* Typo Nasa bold toast Mark FR */
+
 .toast {
     font-family: orator-std, monospace;
-/*     text-decoration: underline; */
     color: #1E90FF;
 }
 
-/* Typo Nasa didascalie toast Mark */
+
 .toastdida {
     font-family: orator-std, monospace;
-/*     text-decoration: underline; */
     color: #C8C8C8;
 }
 
-/* Ce CSS fait que le p du pad `pad-16_jerome_as_cheapmd` est affichÃ© diffÃ©rement que les autres pads */
+
 .pad-16_jerome_as_cheapmd p {
 }
 
-/* PAD DU SOMMAIRE */
+
 .pad-00md .left-side,
 .pad-00md .right-side {
     width: 5%;
@@ -614,14 +574,10 @@ li[data-type=Book] {
     padding-bottom: 100px;
 }
 
-/* PADS CACHES DANS L'INDEX */
 .pad-00md li[data-type=unlisted] {
     display: none;
 }
 
-/*.pad-00md {
-    background-image: url("/media/images/eyes/planche-1.png");
-}*/
 .pad-00md .wrap:nth-of-type(1) {
     height: 200px;
 }
@@ -629,7 +585,6 @@ li[data-type=Book] {
     visibility: hidden;
 }
 
-/* Style de liste */
 .pad-00md ul {
     font-size: 2.6em;
     text-indent: -1.3em;
@@ -637,7 +592,6 @@ li[data-type=Book] {
     margin-left: 1.3em;
 }
 
-/* Style de titre */
 .pad-00md div h1 {
     font-size: 5em !important;
     text-align: center;
@@ -655,21 +609,14 @@ li[data-type=Book] {
     content: ", ";
 }
 
-/* Texte sans alinÃ©a */
 .pad-00md #content p {
     text-indent: 0em;
     display: inherit;
 }
 
-/*.pad-00md li a em {
-    font-style: normal;
-}*/
-
-/* Style des pages Publications et About */
 .book,
 .pad-00-batmd #content p {
     font-family: orator-std, monospace;
-/*    font-size: 18px;*/
     text-indent: 0em;
 }
 .pad-00md .wrap {
@@ -682,7 +629,6 @@ li[data-type=Book] {
     text-indent: 0em;
 }
 
-/* Espacement texte Antin */
 .pad-15_david_antin_parler_aux_frontieres_frmd #content p {
     white-space: pre-wrap;
     text-align: center;
@@ -690,7 +636,6 @@ li[data-type=Book] {
 .pad-21b_david-antin_silence-noisemd #content p {
     white-space: pre-wrap;
     text-indent: 0em;
-/*    text-transform: uppercase; */
 }
 
 
@@ -698,7 +643,7 @@ li[data-type=Book] {
     white-space: pre-wrap;
 }
 
-/* RELEARN OSP */
+
 .pad-02_osp_relearn_frmd h2 {
     clear: both;
 }
@@ -723,13 +668,6 @@ li[data-type=Book] {
     width: 100%;
     margin: 0;
 }
-
-/*.pad-33_benjamin-seror_a_propos_de_future_frmd {
-    background-image:  url("/media/images/eyes/Planches-yeux-3.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: repeat;
-}*/
 
 .pad-61_mark_geffriaud_toast_frmd #content p {
     font-family: Nasa, sans-serif;
