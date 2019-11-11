@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html moznomarginboxes="" lang="FR" mozdisallowselectionprint=""><head>
+<html moznomarginboxes="" lang="EN" mozdisallowselectionprint=""><head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
 
     <link media="all" href="resources/css/style.css" type="text/css" rel="stylesheet">
@@ -130,20 +130,20 @@
         height: 17px;
     }
 
-/* PAGE DE DROITE */
+
     .page:nth-child(odd) .header,
     .page:nth-child(odd) .main-section,
     .page:nth-child(odd) .footer {
     }
     .page:nth-child(odd) section.header:before {
-        content: "\003Co\003E  future \003Co\003E";
+        content: "";
    }
     .page:nth-child(odd) section.header:after {
-        content: "Utopia, Bernadette Mayer";
+        content: "";
         padding-left: 12mm;
         padding-right: 12mm;
     }
-/* PAGE DE GAUCHE */
+
     .page:nth-child(even) .header,
     .page:nth-child(even) .main-section,
     .page:nth-child(even) .footer {
@@ -151,15 +151,15 @@
         padding-right: 12mm;
     }
     .page:nth-child(even) section.header:before {
-        content: "\003Co\003E  future \003Co\003E";
+        content: "";
     }
     .page:nth-child(even) section.header:after {
-        content: "Bernadette Mayer, Utopia";
+        content: "";
     }
-/* TITRE COURANT */
+
     section.header:before,
     section.header:after {
-        font-family: "Nasa";
+        font-family: "orator-std, monospace";
         font-size: 9pt;
         line-height: 10pt;
         position: absolute;
@@ -192,9 +192,6 @@
 </script>
 
     <div id="metadata">
-        <p>
-            Published on &lt;o&gt; future &lt;o&gt;, <span content="2018-09-30T00:00:00" property="dc:created">September 30, 2018</span>.
-        </p>
 
         <dl>
 
@@ -229,31 +226,6 @@
           
         </div>
 
-
-
-
-
-
-    <script src="/static/js/relearn.js" charset="utf-8" type="text/javascript"> </script>
-    <script src="/static/js/comments/comments.js" charset="utf-8" type="text/javascript"> </script>
-
-
-
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.f-u-t-u-r-e.org/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', 1]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript>&lt;p&gt;&lt;img src="http://stats.f-u-t-u-r-e.org/piwik.php?idsite=1" style="border:0;" alt="" /&gt;&lt;/p&gt;</noscript>
-    <!-- End Piwik Code -->
 
 
 
